@@ -1,14 +1,7 @@
-var x;
-console.log(x);
+let nameBtn = document.querySelector('button');
+nameBtn.addEventListener('click', inputname);
 
-if(x==undefined){
-    console.log("x is undefined");
-}
-
-x=10;
-if(x==undefined){
-    console.log("x is undefined");
-}
-else{
-    console.log("x is defined");
+function inputname(){
+    let name=prompt('Enter name of student');
+    nameBtn.textContent= 'Roll no. 182:' + name;
 }

@@ -1,14 +1,6 @@
-var message="_in global";
-console.log("global: message="+message);
+let namasteBtn = document.querySelector('button');
+namasteBtn.addEventListener('click',showMsg);
 
-var a=function(){
-    var message="inside a";
-    console.log("a:message="+message);
-    b();
+function showMsg(){
+    alert("Namaste Dhruv!");
 }
-
-function b(){
-    console.log("b:message="+message);
-}
-
-a();
